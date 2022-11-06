@@ -5,4 +5,5 @@ This project is a web-based shopping system for an existing shop. The project ob
 Here I have used applications:
 
 1.PHP and MySql from database and database connectivity.
+
 2.HTML,CSS and JavaScript for creating the User Interface.
