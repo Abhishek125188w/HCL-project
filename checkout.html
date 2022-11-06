@@ -1,0 +1,28 @@
+<?php
+
+$apiKey = "rzp_live_ZK1sC0aZUadGpt";
+
+?>
+
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+<form action="paynow.php" method="POST">
+<script
+    src="https://checkout.razorpay.com/v1/checkout.js"
+    data-key="<?php echo $apiKey;?>"
+    data-amount="<?php echo $_POST['amount']*100;?>"
+    paise or ₹299.35.
+    data-currency="INR"
+    data-id="<?php echo $_POST['orderid'];?>"
+    data-buttontext="Pay with Razorpay"
+    data-name="Traidev Solutions"
+    data-description="Training & Development"
+    data-image="https://traidev.com/img/web-design-development.png"
+    data-prefill.name="<?php echo $_POST['name'];?>"
+    data-prefill.email="<?php echo $_POST['email'];?>"
+    data-prefill.contact="<?php echo $_POST['mobile'];?>"
+    data-theme.color="#0e90e4">
+</script>
+
+<input type="hidden" custom="Hidden Element" name="hidden">
+</form>
